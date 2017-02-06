@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,11 +19,32 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silly Song" textAlignment="center" lineBreakMode="tailTruncation" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHW-Q2-QmY">
+                                <rect key="frame" x="94" y="28" width="132" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="dCq-dg-fBH"/>
+                                    <constraint firstAttribute="height" constant="71" id="ffm-r2-DJC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="21"/>
+                                <color key="textColor" red="0.93597268599591033" green="0.94896149980501554" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" editable="NO" text="Sample Text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hhz-FS-nwN">
+                                <rect key="frame" x="31" y="218" width="259" height="163"/>
+                                <color key="backgroundColor" red="0.38022182641398972" green="0.16379518880564728" blue="0.36376429526794535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="6Vj-mV-emU"/>
+                                    <constraint firstAttribute="height" constant="163" id="sc1-aV-5Ah"/>
+                                </constraints>
+                                <color key="textColor" red="0.9999127984046936" green="1" blue="0.99988144636154175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="668-FK-dkl">
-                                <rect key="frame" x="67" y="170" width="240" height="30"/>
+                                <rect key="frame" x="31" y="128" width="259" height="30"/>
                                 <color key="backgroundColor" red="0.38022182640000002" green="0.16379518879999999" blue="0.36376429529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -33,35 +54,17 @@
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="eCX-oJ-eiZ"/>
                                 </connections>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" editable="NO" text="Sample Text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hhz-FS-nwN">
-                                <rect key="frame" x="67" y="286" width="240" height="146"/>
-                                <color key="backgroundColor" red="0.38022182641398972" green="0.16379518880564728" blue="0.36376429526794535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="0.9999127984046936" green="1" blue="0.99988144636154175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silly Song" textAlignment="center" lineBreakMode="tailTruncation" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHW-Q2-QmY">
-                                <rect key="frame" x="67" y="54" width="240" height="83"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="83" id="FnV-5b-rC1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="21"/>
-                                <color key="textColor" red="0.93597268599591033" green="0.94896149980501554" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.31136658031088082" green="0.13307604989154423" blue="0.29565954186300752" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rHW-Q2-QmY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Je3-0g-HF6"/>
-                            <constraint firstItem="rHW-Q2-QmY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="L6Y-i3-AIk"/>
-                            <constraint firstItem="rHW-Q2-QmY" firstAttribute="leading" secondItem="668-FK-dkl" secondAttribute="leading" id="XEf-9O-tcJ"/>
-                            <constraint firstItem="668-FK-dkl" firstAttribute="leading" secondItem="Hhz-FS-nwN" secondAttribute="leading" id="Zqg-3f-4aK"/>
-                            <constraint firstItem="rHW-Q2-QmY" firstAttribute="trailing" secondItem="668-FK-dkl" secondAttribute="trailing" id="br1-Ll-yHU"/>
-                            <constraint firstItem="Hhz-FS-nwN" firstAttribute="top" secondItem="668-FK-dkl" secondAttribute="bottom" constant="86" id="f2o-iM-S8R"/>
-                            <constraint firstItem="668-FK-dkl" firstAttribute="trailing" secondItem="Hhz-FS-nwN" secondAttribute="trailing" id="phV-v5-yjk"/>
-                            <constraint firstItem="668-FK-dkl" firstAttribute="top" secondItem="rHW-Q2-QmY" secondAttribute="bottom" constant="33" id="xTv-X3-HWH"/>
-                            <constraint firstItem="rHW-Q2-QmY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="yJ7-a1-ZHz"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hhz-FS-nwN" secondAttribute="bottom" constant="235" id="zTM-Ib-JCb"/>
+                            <constraint firstItem="Hhz-FS-nwN" firstAttribute="top" secondItem="668-FK-dkl" secondAttribute="bottom" constant="60" id="Ay9-2z-IbY"/>
+                            <constraint firstItem="rHW-Q2-QmY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="cQ4-lX-Wah"/>
+                            <constraint firstItem="668-FK-dkl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="fMG-0r-t8Y"/>
+                            <constraint firstItem="Hhz-FS-nwN" firstAttribute="centerX" secondItem="668-FK-dkl" secondAttribute="centerX" id="gFY-7k-RGP"/>
+                            <constraint firstItem="rHW-Q2-QmY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hb9-Wx-lWO"/>
+                            <constraint firstItem="668-FK-dkl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kx1-qU-8S5"/>
+                            <constraint firstItem="668-FK-dkl" firstAttribute="top" secondItem="rHW-Q2-QmY" secondAttribute="bottom" constant="29" id="teO-8p-KnG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="668-FK-dkl" secondAttribute="trailing" constant="14" id="vTk-c9-1BJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -71,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="132" y="135.38230884557723"/>
         </scene>
     </scenes>
 </document>
